@@ -1,4 +1,6 @@
 {
+  "homepage": "http://jarvisd86.github.io/startup-marking",
+ 
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +14,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "deploy": "startup-marking",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
