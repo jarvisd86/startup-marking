@@ -2,9 +2,18 @@ import React from 'react'
 
 const ContactForm = () => {
     return (
-        <div>
+        <form>
+            <input 
+            name='first'
+            placeholder='first'/> 
+
+            <input
+             name='last'
+              placeholder='last'/>
             
-        </div>
+            
+            <button>Submit</button>
+        </form>
     )
 }
 
