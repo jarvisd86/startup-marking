@@ -4,6 +4,7 @@ import "./sass/main.css";
 import React from 'react'
 import{ Link, Route, BrowserRouter } from "react-router-dom";
 import Contact from "./components/Contact";
+import LandingPage from "./components/LandingPage";
 
 
 const  App = () => {
@@ -16,7 +17,7 @@ const  App = () => {
         <nav>
           <ul>
      
-            <li><Link to={"/landingPage"}>home</Link>
+            <li><Link to={"/landingPage"}>landing</Link>
           </li> 
           <li><Link to={"/contact"}>Contact</Link>
           </li>
@@ -25,6 +26,7 @@ const  App = () => {
           </ul>
         </nav>
       </header>
+        <Route exact path='/landingPage' component={LandingPage} />
         <Route exact path='/contact' component={Contact} />
       
     </div>
