@@ -1,7 +1,10 @@
-// import logo from './logo.svg';
+
 import "./sass/main.css";
-// import Contact from "./components/Contact";
+
 import React from 'react'
+import{ Link } from "react-router-dom";
+
+
 const  App = () => {
   return (
     <div className="App">
@@ -9,11 +12,13 @@ const  App = () => {
         <h1>Catch Some Vibes</h1>
         <nav>
           <ul>
-             <a href="./components/LandingPage.js">home</a>
-
-           {/* <li><a href="./components/Contact.js">Contact</a></li>  */}
-          {/* <Contact /> */}
-           <a href="./components/Contact.js">Contact</a>
+     
+            <li><Link to={"./LandingPage.js"}>home</Link>
+          </li> 
+          <li><Link to={"./Contact.js"}>Contact</Link>
+          </li>
+         
+           
           </ul>
         </nav>
       </header>
