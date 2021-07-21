@@ -24,7 +24,7 @@ const App = () => {
 
               </li>
               <li>
-                <Link to={"/products"}>products</Link>
+                <Link to={"/"}>products</Link>
               </li>
             </ul>
           </nav>
@@ -32,7 +32,7 @@ const App = () => {
         <Route exact path="/landingPage" component={LandingPage} />
         <Route exact path="/contact" component={Contact} />
 
-        <Route exact path="/products">
+        <Route exact path="/">
           <h1> marketing services </h1>
 
           <div className="items">
@@ -46,6 +46,8 @@ const App = () => {
           </div>
           <h2>Catch Some Vibes</h2>
         </Route>
+
+       
       </div>
     </BrowserRouter>
   );

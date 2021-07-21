@@ -19,8 +19,14 @@
 }
 
 .App-header {
-  background-color: purple;
-  width: 50%;
-  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: rgba(128, 0, 128, 0.247);
+  width: 85vw;
+  height: 50vh;
 }
 /*# sourceMappingURL=main.css.map */

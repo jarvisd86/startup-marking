@@ -6,9 +6,11 @@
  }
 
  .App-header {
-     background-color: purple;
-     width: 50%;
-     height: 50%;
+     display: flex;
+     justify-content: space-evenly;
+     background-color: rgba(128, 0, 128, 0.247);
+     width: 85vw;
+     height: 50vh;
 
 
  }
