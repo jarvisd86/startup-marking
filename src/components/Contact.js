@@ -5,11 +5,11 @@ const Contact = () => {
         <form>
             <input 
             name='first'
-            placeholder='first'/> 
+            placeholder='first' /> 
 
+            
             <input
-             name='last'
-              placeholder='last'/>
+             name='last' placeholder='last' />
             
             
             <button>Submit</button>
