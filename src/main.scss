@@ -12,15 +12,15 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   background-color: rgba(128, 0, 128, 0.247);
   width: 85vw;
   height: 60vh;
 }
-nav {
-display: flex;
-justify-content: center;
-align-items: center;
+nav,
+li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 h1,
 h2 {
