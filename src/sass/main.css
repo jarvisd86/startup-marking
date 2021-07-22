@@ -41,8 +41,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(128, 0, 128, 0.247);
-  width: 85vw;
+  background-color: rgba(128, 0, 128, 0.274);
+  width: 90vw;
   height: 60vh;
 }
 
@@ -67,5 +67,18 @@ h2 {
 ul li {
   color: aquamarine;
   list-style-type: none;
+}
+
+.text2 {
+  position: absolute;
+}
+
+.text-wrap {
+  position: relative;
+  bottom: 5vh;
+}
+
+.wrapper {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

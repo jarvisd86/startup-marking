@@ -1,10 +1,7 @@
-import "./sass/main.css";
-
 import React from "react";
-import { Link, Route, BrowserRouter } from "react-router-dom";
-import Contact from "./components/Contact";
-import LandingPage from "./components/LandingPage";
-
+import { Link,  BrowserRouter } from "react-router-dom";
+import "./sass/main.css"
+import './components/Header';
 import Img0 from "./marketing/image.jpg";
 import Img1 from "./marketing/image2.jpg";
 import Img2 from "./marketing/image3.jpg";
@@ -14,40 +11,49 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
-          <nav>
-            <ul>
-              <li>
-                <Link to={"/landingPage"}>landing</Link>
-              </li>
-              <li>
-                <Link to={"/contact"}>Contact</Link>
-
-              </li>
-              <li>
-                <Link to={"/"}>products</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <Route exact path="/landingPage" component={LandingPage} />
-        <Route exact path="/contact" component={Contact} />
-
-        <Route exact path="/">
          
-        </Route>
+         
+          <h2>Catch Some Vibes</h2>
+        </header>
 
         <h1> marketing services </h1>
+<div className='text-wrap'>
+        <div className="items">
+        
+       <div  className='wrapper'>
+           <Link to={"/landingPage"} className='text'>landing  <img src={Img0} alt="#" /></Link>
+           <p className='text2'>some text</p>
+          </div>
+        </div>
+         
+        </div>
+        
 
-          <div className="items">
-            <img src={Img0} alt="#" />
+        <div className="items">
+        <div className='text-wrap'>
+       
+        </div>
+          <div className='wrapper'>
+            <Link to={"/contact"} className='text'>Contact<img src={Img1} alt="#" /></Link>
+             <p className='text2'>some text</p>
           </div>
-          <div className="items">
-            <img src={Img1} alt="#" />
-          </div>
-          <div className="items">
-            <img src={Img2} alt="#" />
-          </div>
-          <h2>Catch Some Vibes</h2>
+        </div>
+
+        <div className="items">
+        <div className='text-wrap'>
+       
+        </div>
+        <div className='wrapper'>
+        <Link to={"/"} className='text'>products <img src={Img2} alt="#" /></Link>
+        <p className='text2'>some text</p>
+        </div>
+        
+        
+         
+            
+          
+          
+        </div>
       </div>
     </BrowserRouter>
   );
