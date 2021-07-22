@@ -1,19 +1,27 @@
- 
-@import './landingPage';
+@import "./landingPage";
 
- .App{
-     background-color: aquamarine;
- }
+.App {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: aquamarine;
+  justify-content: space-evenly;
+}
 
- .App-header {
-     display: flex;
-     justify-content: space-evenly;
-     background-color: rgba(128, 0, 128, 0.247);
-     width: 85vw;
-     height: 50vh;
+.App-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-
- }
-//  ul{
-
-//  }
+  background-color: rgba(128, 0, 128, 0.247);
+  width: 85vw;
+  height: 60vh;
+}
+h1,
+h2 {
+  text-align: center;
+}
+ul li {
+  color: aquamarine;
+  list-style-type: none;
+}

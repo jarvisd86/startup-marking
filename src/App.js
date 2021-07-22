@@ -33,7 +33,10 @@ const App = () => {
         <Route exact path="/contact" component={Contact} />
 
         <Route exact path="/">
-          <h1> marketing services </h1>
+         
+        </Route>
+
+        <h1> marketing services </h1>
 
           <div className="items">
             <img src={Img0} alt="#" />
@@ -45,9 +48,6 @@ const App = () => {
             <img src={Img2} alt="#" />
           </div>
           <h2>Catch Some Vibes</h2>
-        </Route>
-
-       
       </div>
     </BrowserRouter>
   );
