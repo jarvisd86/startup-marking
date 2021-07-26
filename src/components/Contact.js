@@ -1,30 +1,53 @@
-// import  { useState } from 'react'
-import React from 'react'
-
+ import  { useState } from 'react'
+import { ImportsNotUsedAsValues, setConstantValue } from 'typescript'
 
 const Contact = () => {
-//    const [state,  setState] = useState()
+  const [input, setInput] = useState({
+    name: ''
+
+  })
     const handleChange =(e) =>{
+       let {name , value} = e.target 
+       setInput({
+           ...input,
+           [name]: value,
+       });
+
+
+            
         
+        
+
+
 
     }
     const handleSubmit =(e) =>{
+        e.preventDefault()
+        // let { name } = input
 
     }
     return (
         <form onSubmit={handleSubmit}>
             <input 
             name='first'
+            type='text'
             placeholder='first'
-            onChange={handleChange} /> 
+            onChange={handleChange}
+            value={input.name}
+            required
+            /> 
 
             
             <input
-             name='last' placeholder='last'
-             onChange={handleChange}  />
+             name='last'
+              placeholder='last'
+             onChange={handleChange} 
+              value={input.name}
+              required />
+
             
             
-            <button>Submit</button>
+            <button type='submit'>Submit</button>
         </form>
     )
 
