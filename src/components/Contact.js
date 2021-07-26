@@ -1,12 +1,14 @@
+// import  { useState } from 'react'
 import React from 'react'
 
 
 const Contact = () => {
-   
-    const handleChange =() =>{
+//    const [state,  setState] = useState()
+    const handleChange =(e) =>{
+        
 
     }
-    const handleSubmit =() =>{
+    const handleSubmit =(e) =>{
 
     }
     return (
