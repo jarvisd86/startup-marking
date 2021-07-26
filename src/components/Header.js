@@ -1,10 +1,14 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const Header = () => {
     return (
-        <div>
-        <h1>Catch Some Vibes</h1>
-            
+        <div className="App">
+        
+        <header className="App-header">
+          <h2>Catch Some Vibes</h2>
+        </header>
+        <Navbar />
         </div>
     )
 }

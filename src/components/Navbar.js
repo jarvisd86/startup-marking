@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link, Route, BrowserRouter } from 'react-router-dom';
-import Contact from "./components/Contact";
-import LandingPage from "./components/LandingPage";
+import { Link } from 'react-router-dom';
+// import Contact from "./components/Contact";
+// import LandingPage from "./components/LandingPage";
 const Navbar = () => {
     return (
         <div>
-        <BrowserRouter>
+  
         <nav>
             <ul>
               <li>
-                <Link to={"/landingPage"}>landing</Link>
+                <Link to={"/startup-marking"}>landing</Link>
               </li>
               <li>
-                <Link to={"/contact"}>Contact</Link>
+                <Link to={"/startup-marking/contact"}>Contact</Link>
 
               </li>
               <li>
@@ -20,13 +20,8 @@ const Navbar = () => {
               </li>
             </ul>
           </nav>
-          <Route exact path="/landingPage" component={LandingPage} />
-        <Route exact path="/contact" component={Contact} />
-
-        <Route exact path="/">
-         
-        </Route>
-        </BrowserRouter>
+       
+     
 
            
         </div>
